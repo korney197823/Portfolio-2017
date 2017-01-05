@@ -4,4 +4,29 @@ block variables
   - var title = 'Home page'
 
 block content
-  include ../common/_header
+  header.header.header--welcome
+    .container
+      button.btn.btn--authorize
+
+  main
+    section.card
+      .card__img-wrap
+        img.card__img(src="/assets/img/IMG_20160910_130541.jpg")
+      h1.card__title Денис Корниенко
+      p.card__text Личный сайт веб разработчика
+
+      include ../common/_socials
+
+      nav.card__menu
+        ul.menu__items
+          li.menu__item
+            a.menu__link(href="#") Мои работы
+          li.menu__item
+            a.menu__link(href="#") Обо мне
+          li.menu__item
+            a.menu__link(href="#") Блог
+
+  footer.footer.footer--welcome
+    .copyright
+      p.copyright__name &#169; Денис Корниенко
+      p.copyright__text создано с любовью в LoftSchool 2017
