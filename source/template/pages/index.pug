@@ -4,29 +4,58 @@ block variables
   - var title = 'Home page'
 
 block content
-  header.header.header--welcome
-    .container
-      button.btn.btn--authorize
+  .index-wrap
+    header.header.header--welcome
+      .container
+        button.btn.btn--authorize Авторизоваться
 
-  main
-    section.card
-      .card__img-wrap
-        img.card__img(src="/assets/img/IMG_20160910_130541.jpg")
-      h1.card__title Денис Корниенко
-      p.card__text Личный сайт веб разработчика
+    main.index-content
+      section.card
+        .card__wrap
+          .card__front
+            .card__img-wrap
+              img.card__img(src="/assets/img/avatar_3.jpg")
+            h2.card__title Денис Корниенко
+            p.card__text Личный сайт веб разработчика
 
-      include ../common/_socials
+            include ../common/_socials
 
-      nav.card__menu
-        ul.menu__items
-          li.menu__item
-            a.menu__link(href="#") Мои работы
-          li.menu__item
-            a.menu__link(href="#") Обо мне
-          li.menu__item
-            a.menu__link(href="#") Блог
+            nav.card__menu
+              ul.menu__items
+                li.menu__item
+                  a.btn.btn--link(href="#") Мои работы
+                li.menu__item
+                  a.btn.btn--link(href="#") Обо мне
+                li.menu__item
+                  a.btn.btn--link(href="#") Блог
 
-  footer.footer.footer--welcome
-    .copyright
-      p.copyright__name &#169; Денис Корниенко
-      p.copyright__text создано с любовью в LoftSchool 2017
+          .card__back
+            form.form-login
+              h2.form-login__title Авторизуйтесь
+
+              label.form-login__label-text(for="login") Логин
+              input.form-login__input-text(name="text" type="text" id="login" placeholder="Логин")
+              label.form-login__label-text(for="password") Пароль
+              input.form-login__input-text(name="password" type="password" id="password" placeholder="Пароль")
+
+              input.form-login__input-checkbox(name="human" type="checkbox" id="human")
+              label.form-login__label-checkbox(for="human") Я человек
+
+              p.form-login__question Вы точно не робот?
+
+              input.form-login__input-radio(name="bot" type="radio" id="yes" checked)
+              label.form-login__label-radio(for="yes") Да
+
+              input.form-login__input-radio(name="bot" type="radio" id="no")
+              label.form-login__label-radio(for="no") Не уверен
+
+              .form-login__button-wrap
+                a.btn(href="#") На главную
+                a.btn(href="#") Войти
+
+
+
+    footer.footer.footer--welcome
+      .copyright
+        p.copyright__name &#169; Денис Корниенко
+        p.copyright__text создано с любовью в LoftSchool 2017

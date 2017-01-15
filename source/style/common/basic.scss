@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: $font;
 }
 
@@ -23,4 +23,31 @@ a {
 }
 img {
   display: block;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+//index.html basic style
+.index-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  flex-grow: 1;
+}
+.index-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }

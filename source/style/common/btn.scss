@@ -1,0 +1,13 @@
+.btn {
+  &--authorize {
+    display: block;
+    margin: 0 auto;
+    padding: rem(12px) rem(20px);
+    border: 1px solid $white;
+    border-radius: 6px;
+    font-family: $fontmedium;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: $white;
+  }
+}

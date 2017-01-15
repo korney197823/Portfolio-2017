@@ -1,0 +1,37 @@
+.card {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+
+.card__img-wrap {
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.card__img {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+.card__title {
+  text-align: center;
+  font-family: $fontmedium;
+  font-size: rem(21px);
+  line-height: rem(28px);
+  color: $fontdark;
+}
+.card__text {
+  text-align: center;
+  font-family: $font;
+  font-size: rem(14px);
+  line-height: rem(24px);
+  color: $fontbasic;
+}
