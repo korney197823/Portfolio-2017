@@ -10,4 +10,13 @@
     line-height: rem(24px);
     color: $white;
   }
+  &--link {
+    display: block;
+    padding: rem(12px) rem(20px);
+    background-color: rgba(7, 171, 151, 0.75);
+    font-family: $fontmedium;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: $white;
+  }
 }

@@ -1,14 +1,18 @@
 .card {
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.85);
+  padding-top: 40px;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
-
+.card__back {
+  display: none;
+}
 
 .card__img-wrap {
-  margin: 0 auto;
   width: 140px;
   height: 140px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -22,6 +26,7 @@
   height: auto;
 }
 .card__title {
+  margin-bottom: 10px;
   text-align: center;
   font-family: $fontmedium;
   font-size: rem(21px);
@@ -29,9 +34,19 @@
   color: $fontdark;
 }
 .card__text {
+  margin-bottom: 35px;
   text-align: center;
   font-family: $font;
   font-size: rem(14px);
   line-height: rem(24px);
   color: $fontbasic;
+}
+.card-menu__items {
+  display: flex;
+}
+.card-menu__item {
+  &:nth-of-type(2) {
+    flex-grow: 2;
+  }
+  flex-grow: 1;
 }
