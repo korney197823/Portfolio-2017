@@ -1,11 +1,37 @@
 .card {
   width: 300px;
-  padding-top: 40px;
+  height: 405px;
   background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 4px;
+  overflow: hidden;
+  perspective: 1000px;
+  & .card__wrap {
+    transform: rotateY(180deg);
+  }
 }
-
+.card__wrap {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.card__front, .card__back {
+  width: 300px;
+  height: 405px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card__front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  padding-top: 40px;
+}
 .card__back {
-  display: none;
+  transform: rotateY(180deg);
 }
 
 .card__img-wrap {
@@ -45,6 +71,9 @@
   display: flex;
 }
 .card-menu__item {
+  &:not(:last-of-type) {
+    border-right: 2px solid transparent;
+  }
   &:nth-of-type(2) {
     flex-grow: 2;
   }
