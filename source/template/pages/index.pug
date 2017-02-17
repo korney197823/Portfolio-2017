@@ -33,25 +33,31 @@ block content
             form.form-login
               h2.form-login__title Авторизуйтесь
 
-              label.form-login__label-text(for="login") Логин
-              input.form-login__input-text(name="text" type="text" id="login" placeholder="Логин")
-              label.form-login__label-text(for="password") Пароль
-              input.form-login__input-text(name="password" type="password" id="password" placeholder="Пароль")
-
-              input.form-login__input-checkbox(name="human" type="checkbox" id="human")
-              label.form-login__label-checkbox(for="human") Я человек
+              .form-login__group
+                label.form-login__label-text(for="login") Логин
+                input.form-login__input-text(name="text" type="text" id="login" placeholder="Логин")
+              .form-login__group.form-login__group
+                label.form-login__label-text(for="password") Пароль
+                input.form-login__input-text(name="password" type="password" id="password" placeholder="Пароль")
+              .form-login__group
+                input.form-login__input-checkbox(name="human" type="checkbox" id="human")
+                label.form-login__label-checkbox(for="human") Я человек
 
               p.form-login__question Вы точно не робот?
 
-              input.form-login__input-radio(name="bot" type="radio" id="yes" checked)
-              label.form-login__label-radio(for="yes") Да
+              .form-login__group
+                input.form-login__input-radio(name="bot" type="radio" id="yes" checked)
+                label.form-login__label-radio(for="yes") Да
 
-              input.form-login__input-radio(name="bot" type="radio" id="no")
-              label.form-login__label-radio(for="no") Не уверен
+                input.form-login__input-radio(name="bot" type="radio" id="no")
+                label.form-login__label-radio(for="no") Не уверен
 
-              .form-login__button-wrap
-                a.btn(href="#") На главную
-                a.btn(href="#") Войти
+              nav.card-menu
+                ul.card-menu__items
+                  li.card-menu__item
+                    a.btn.btn--link(href="#") На главную
+                  li.card-menu__item
+                    a.btn.btn--link(href="#") Войти
 
 
 

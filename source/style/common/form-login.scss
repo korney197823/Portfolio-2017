@@ -1,0 +1,86 @@
+.form-login {
+  margin-top: 35px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-login__title {
+  text-align: center;
+  font-family: $fontsecond;
+  font-size: rem(30px);
+  line-height: rem(36px);
+  color: $fontbasic;
+}
+
+.form-login__group {
+  display: flex;
+  justify-content: center;
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
+.form-login__label-text {
+  width: 45px;
+  text-indent: -1000px;
+  overflow: hidden;
+  background-color: #f0efe9;
+  border-radius: 4px 0 0 4px;
+}
+.form-login__input-text {
+  width: 215px;
+  padding: rem(13px) rem(16px);
+  border: none;
+  outline: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.form-login__input-checkbox,
+.form-login__input-radio {
+  display: none;
+}
+.form-login__label-checkbox,
+.form-login__label-radio {
+  position: relative;
+  padding-left: 30px;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+  }
+}
+.form-login__label-checkbox {
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $bgdark;
+    border-radius: 2px;
+  }
+}
+.form-login__label-radio {
+  &:first-of-type {
+    margin-right: 40px;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+}
+
+.form-login__question {
+  text-align: center;
+  font-family: $fontbold;
+  line-height: 24px;
+  color: $fontbasic;
+}
