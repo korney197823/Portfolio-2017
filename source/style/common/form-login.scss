@@ -42,6 +42,7 @@
 .form-login__label-radio {
   position: relative;
   padding-left: 30px;
+  cursor: pointer;
   &:before {
     position: absolute;
     content: '';
@@ -60,7 +61,27 @@
     background-color: $bgdark;
     border-radius: 2px;
   }
+  &:after {
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 12px;
+    left: 4px;
+    top: 3px;
+    border-left: 2px solid $white;
+    border-bottom: 2px solid $white;
+    transform: rotate(-45deg);
+  }
 }
+.form-login__input-checkbox + label::after,
+.form-login__input-radio + label::after {
+  content: none;
+}
+.form-login__input-radio:checked + label::after,
+.form-login__input-checkbox:checked + label::after {
+  content: "";
+}
+
 .form-login__label-radio {
   &:first-of-type {
     margin-right: 40px;
@@ -76,6 +97,17 @@
     border: 1px solid #cdcdcd;
     border-radius: 50%;
   }
+  &:after {
+    position: absolute;
+    content: '';
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: $bgbasic;
+    border-radius: 50%;
+  }
+
 }
 
 .form-login__question {
