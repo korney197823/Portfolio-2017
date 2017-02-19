@@ -4,9 +4,10 @@ block variables
   - var title = 'Home page'
 
 block content
+  include ../common/_svgsprite
   .index-wrap
     header.header.header--welcome
-      .container
+      .container.container-welcome--header
         button.btn.btn--authorize Авторизоваться
 
     main.index-content
@@ -55,7 +56,7 @@ block content
               nav.card-menu
                 ul.card-menu__items
                   li.card-menu__item
-                    a.btn.btn--link(href="#") На главную
+                    a.btn.btn--link.btn--main(href="#") На главную
                   li.card-menu__item
                     a.btn.btn--link(href="#") Войти
 

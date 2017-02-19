@@ -3,7 +3,6 @@
   cursor: pointer;
   &--authorize {
     display: block;
-    margin: 0 auto;
     padding: rem(12px) rem(20px);
     border: 1px solid $white;
     border-radius: 6px;
@@ -11,6 +10,14 @@
     font-size: rem(14px);
     line-height: rem(24px);
     color: $white;
+    &:hover {
+      background-color: $white;
+      color: $bgbasic;
+    }
+    @include desktop {
+      position: absolute;
+      right: -20px;
+    }
   }
   &--link {
     display: block;
@@ -21,5 +28,12 @@
     font-size: rem(14px);
     line-height: rem(24px);
     color: $white;
+    &:hover {
+      background-color: $bgdark;
+    }
+    @include tablet {
+      font-size: rem(16px);
+      line-height: rem(36px);
+    }
   }
 }

@@ -28,11 +28,34 @@ button {
   background-color: transparent;
   border: none;
 }
+svg:first-of-type {
+  display: none;
+}
 
 .container {
   margin: 0 auto;
+  @include tablet {
+    width: 720px;
+  }
+  @include laptop {
+    width: 1160px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
 }
-
+.container-welcome {
+  &--header {
+    display: flex;
+    justify-content: center;
+    @include tablet {
+      justify-content: flex-end;
+    }
+    @include desktop {
+      position: relative;
+    }
+  }
+}
 //index.html basic style
 .index-wrap {
   display: flex;

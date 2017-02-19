@@ -1,10 +1,21 @@
 .copyright {
+  padding-bottom: 30px;
   font-style: $fontlight;
   font-size: rem(14px);
   line-height: rem(24px);
   color: #f4f3f4;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    font-size: rem(16px);
+    line-height: rem(18px);
+  }
 }
 .copyright__name,
 .copyright__text {
   text-align: center;
+  padding: 0 7px;
+}
+.copyright__name {
+  border-right: 2px solid #f4f3f4;
 }
