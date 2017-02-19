@@ -1,0 +1,99 @@
+extends ../_template
+
+block variables
+  - var title = 'Обо мне '
+
+block content
+  include ../common/_svgsprite
+  header.header-about
+    .container
+      .header-about__top
+
+        .social
+          ul.social__items
+            li.social__item
+              a.social__link.social__link--header.social__link--vk(href="https://vk.com/id29755814") В контакте
+                svg.social__icon.social__icon--light
+                  use(xlink:href='#vk')
+            li.social__item
+              a.social__link.social__link--header.social__link--github(href="https://github.com/korney197823") Github
+                svg.social__icon.social__icon--light
+                  use(xlink:href='#github')
+            li.social__item
+              a.social__link.social__link--header.social__link--linkedin(href="#") LinkedIn
+                svg.social__icon.social__icon--light
+                  use(xlink:href='#in')
+
+        nav.main-menu
+          button.btn.btn--toggle(type="button")
+          ul.main-menu__items
+            li.main-menu__item
+              a.main-menu__link(href="works.html") Мои работы
+            li.main-menu__item
+              a.main-menu__link(href="works.html") Блог
+            li.main-menu__item
+              a.main-menu__link(href="works.html") Обо мне
+            li.main-menu__item
+              a.main-menu__link(href="works.html") Авторизация
+
+
+    .card-about
+      .card__img-wrap
+        img.card__img(src="/assets/img/avatar_3.jpg")
+      h2.card-about__title Денис Корниенко
+      p.card-about__text Личный сайт веб разработчика
+
+  main
+    section.about-me
+      .container
+        h2.about-me__title Обо мне
+        .about-me__img-wrap
+          img.about-me__img(src="assets/img/avatar_3.jpg")
+        h3.subtitle.about-me__subtitle Кто я
+        p.about-me__text.
+          Я веб разработчик из Геленджика. Мне 38 лет. Я занимаюсь разработкой современных сайтов и приложений.
+          Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн
+          образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+
+    section.features
+      .container
+        h3.subtitle.features__subtitle Чем я могу быть вам полезен
+        p.features__text.
+          Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend.
+          Но давайте по порядку.
+
+        include ../common/_skills
+
+    include ../common/_contacts
+    include ../common/_map
+  .footer.footer.footer--about
+    .container
+      nav.footer-menu
+        ul.footer-menu__items
+          li.footer-menu__item
+            a.footer-menu__link(href="works.html") Мои работы
+          li.footer-menu__item
+            a.footer-menu__link(href="works.html") Блог
+          li.footer-menu__item
+            a.footer-menu__link(href="works.html") Обо мне
+          li.footer-menu__item
+            a.footer-menu__link(href="works.html") Авторизация
+
+      .social
+        ul.social__items
+          li.social__item.social__item--round
+            a.social__link.social__link--round.social__link--vk(href="https://vk.com/id29755814") В контакте
+              svg.social__icon.social__icon--footer
+                use(xlink:href='#vk')
+          li.social__item.social__item--round
+            a.social__link.social__link--round.social__link--github(href="https://github.com/korney197823") Github
+              svg.social__icon.social__icon--footer
+                use(xlink:href='#github')
+          li.social__item.social__item--round
+            a.social__link.social__link--round.social__link--linkedin(href="#") LinkedIn
+              svg.social__icon.social__icon--footer
+                use(xlink:href='#in')
+
+
+
+

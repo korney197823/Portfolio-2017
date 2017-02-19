@@ -28,12 +28,13 @@ button {
   background-color: transparent;
   border: none;
 }
-svg:first-of-type {
+.main-svg {
   display: none;
 }
 
 .container {
   margin: 0 auto;
+  width: 100%;
   @include tablet {
     width: 720px;
   }

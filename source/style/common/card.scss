@@ -97,3 +97,36 @@
   }
   flex-grow: 1;
 }
+
+//ABOUT PAGE
+
+.card-about {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%)
+             translateX(-50%);
+}
+.card-about__title {
+  margin-top: 30px;
+  text-align: center;
+  font-size: rem(21px);
+  line-height: rem(28px);
+  color: $white;
+  @include tablet {
+    font-size: rem(35px);
+    line-height: rem(42px);
+  }
+}
+.card-about__text {
+  margin-top: 12px;
+  text-align: center;
+  font-family: $fontlight;
+  font-size: rem(14px);
+  line-height: rem(24px);
+  color: #d2d0d3;
+  @include tablet {
+    font-size: rem(16px);
+  }
+}

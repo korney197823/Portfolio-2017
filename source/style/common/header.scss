@@ -2,3 +2,18 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+//ABOUT PAGE
+.header-about {
+  position: relative;
+  height: 100vh;
+  min-height: 650px;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-about__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
