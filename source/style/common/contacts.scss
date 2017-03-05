@@ -1,7 +1,33 @@
+
+.contacts {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.contacts__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: $fontsecond;
+  font-size: rem(35px);
+  line-height: rem(42px);
+}
+
 .contacts__icon {
   width: 30px;
   height: 30px;
   use {
     fill: $bgbasic
   }
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.contacts__link {
+  margin-left: 10px;
+  font-family: $fontmedium;
+  color: #6a7b83;
 }

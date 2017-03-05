@@ -1,0 +1,21 @@
+.footer {
+  &--about {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 270px;
+    background-color: rgba(66, 62, 66, 0.85);
+  }
+}
+.footer-menu__items {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu__link {
+  font-family: $fontmedium;
+  font-size: rem(13px);
+  color: $white;
+}
