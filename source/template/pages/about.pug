@@ -43,55 +43,76 @@ block content
       h2.card-about__title Денис Корниенко
       p.card-about__text Личный сайт веб разработчика
 
+    a.btn--arrow(href="#about-me")
+      svg
+        use(xlink:href='#arrow_down')
+
+
+
   main
-    section.about-me
+    div.about-me__wrap
+      section.about-me#about-me
+        .container.container--about-me
+          h2.about-me__title Обо мне
+          .about-me__img
+          h3.subtitle.about-me__subtitle Кто я
+          p.about-me__text.
+            Я веб разработчик из Геленджика. Мне 38 лет. Я занимаюсь разработкой современных сайтов и приложений.
+            Мне нравится делать интересные и современные проекты.
+          p.about-me__text.
+            Этот сайт я сделал в рамках обучения в Школе онлайн
+            образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+
+      section.features
+        .container
+          h3.subtitle.features__subtitle Чем я могу быть вам полезен
+          p.features__text.
+            Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend.
+            Но давайте по порядку.
+
+          include ../common/_skills
+
+    .location
+      include ../common/_contacts
+      include ../common/_map
+  .footer.footer--about
+    .footer-menu__wrap
       .container
-        h2.about-me__title Обо мне
-        .about-me__img
-        h3.subtitle.about-me__subtitle Кто я
-        p.about-me__text.
-          Я веб разработчик из Геленджика. Мне 38 лет. Я занимаюсь разработкой современных сайтов и приложений.
-          Мне нравится делать интересные и современные проекты.<br><br> Этот сайт я сделал в рамках обучения в Школе онлайн
-          образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+        nav.footer-menu
+          ul.footer-menu__items
+            li.footer-menu__item
+              a.footer-menu__link(href="works.html") Мои работы
+            li.footer-menu__item
+              a.footer-menu__link(href="works.html") Обо мне
+            li.footer-menu__item
+              a.footer-menu__link(href="works.html") Блог
+            li.footer-menu__item
+              a.footer-menu__link(href="index.html") Авторизация
 
-    section.features
+        .social
+          ul.social__items
+            li.social__item.social__item--round
+              a.social__link.social__link--round.social__link--vk(href="https://vk.com/id29755814") В контакте
+                svg.social__icon.social__icon--footer
+                  use(xlink:href='#vk')
+            li.social__item.social__item--round
+              a.social__link.social__link--round.social__link--github(href="https://github.com/korney197823") Github
+                svg.social__icon.social__icon--footer
+                  use(xlink:href='#github')
+            li.social__item.social__item--round
+              a.social__link.social__link--round.social__link--linkedin(href="#") LinkedIn
+                svg.social__icon.social__icon--footer
+                  use(xlink:href='#in')
+
+    .info__wrap
       .container
-        h3.subtitle.features__subtitle Чем я могу быть вам полезен
-        p.features__text.
-          Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend.
-          Но давайте по порядку.
+        .info
+          p.info__text.
+            Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
 
-        include ../common/_skills
-
-    include ../common/_contacts
-    include ../common/_map
-  .footer.footer.footer--about
-    .container
-      nav.footer-menu
-        ul.footer-menu__items
-          li.footer-menu__item
-            a.footer-menu__link(href="works.html") Мои работы
-          li.footer-menu__item
-            a.footer-menu__link(href="works.html") Обо мне
-          li.footer-menu__item
-            a.footer-menu__link(href="works.html") Блог
-          li.footer-menu__item
-            a.footer-menu__link(href="works.html") Авторизация
-
-      .social
-        ul.social__items
-          li.social__item.social__item--round
-            a.social__link.social__link--round.social__link--vk(href="https://vk.com/id29755814") В контакте
-              svg.social__icon.social__icon--footer
-                use(xlink:href='#vk')
-          li.social__item.social__item--round
-            a.social__link.social__link--round.social__link--github(href="https://github.com/korney197823") Github
-              svg.social__icon.social__icon--footer
-                use(xlink:href='#github')
-          li.social__item.social__item--round
-            a.social__link.social__link--round.social__link--linkedin(href="#") LinkedIn
-              svg.social__icon.social__icon--footer
-                use(xlink:href='#in')
+        .copyright.copyright--about
+          p.copyright__name &#169; Денис Корниенко
+          p.copyright__text создано с любовью в LoftSchool 2017
 
 
 

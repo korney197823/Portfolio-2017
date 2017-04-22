@@ -48,6 +48,11 @@ button {
   @include desktop {
     width: 1200px;
   }
+  &--about-me {
+    @include tablet {
+      width: 472px;
+    }
+  }
 }
 .container-welcome {
   &--header {

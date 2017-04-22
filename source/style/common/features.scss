@@ -2,11 +2,25 @@
   background-color: #eeebdf;
 }
 
+.features__subtitle {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 10px;
+  @include tablet {
+    width: 472px;
+    margin: 0 auto;
+  }
+}
+
 .features__text {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   padding-left: 10px;
   padding-right: 10px;
   font-family: $font;
   font-size: rem(14px);
   line-height: rem(24px);
+  @include tablet {
+    width: 472px;
+    margin: 0 auto;
+  }
 }

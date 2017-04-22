@@ -57,6 +57,20 @@ zNQoJQzM4Ljg4MSwxNSw0MCwxNi4xMTksNDAsMTcuNUw0MCwxNy41eiIvPgo8cGF0aCBmaWxsPS
 IjRkZGRkZGIiBkPSJNNDAsMzIuNWMwLDEuMzgxLTEuMTE5LDIuNS0yLjUsMi41aC0zNUMxLjExO
 SwzNSwwLDMzLjg4MSwwLDMyLjVsMCwwQzAsMzEuMTE5LDEuMTE5LDMwLDIuNSwzMGgzNQoJQzM4
 Ljg4MSwzMCw0MCwzMS4xMTksNDAsMzIuNUw0MCwzMi41eiIvPgo8L3N2Zz4=");
+    @include tablet {
+      width: 40px;
+      height: 35px;
+    }
   }
   background-size: cover;
+  &--arrow {
+    position: absolute;
+    bottom: 52px;
+    left: calc(50% - 13px);
+    svg {
+      width: 26px;
+      height: 16px;
+      fill: #cdc5ca;
+    }
+  }
 }

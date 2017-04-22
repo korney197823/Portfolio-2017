@@ -1,0 +1,14 @@
+.info {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+.info__wrap {
+  padding-top: rem(20px);
+  padding-bottom: rem(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.info__text {
+  text-align: center;
+  font-size: rem(13px);
+  line-height: rem(24px);
+}

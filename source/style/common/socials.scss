@@ -1,5 +1,10 @@
 .social {
-  margin-bottom: 35px;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 0;
+  }
 }
 .social__items {
   display: flex;
@@ -9,7 +14,10 @@
 .social__item {
   font-size: 0;
   &:not(:last-of-type) {
-    margin-right: 26px;
+    margin-right: 10px;
+    @include tablet {
+      margin-right: 30px;
+    }
   }
 
 }
@@ -26,7 +34,10 @@
     border-radius: 50%;
     border: 1px solid #7f8486;
     &:hover {
-
+      background-color: #fff;
+      svg {
+        fill: #53595d;
+      }
     }
   }
   &--header {

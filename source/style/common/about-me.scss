@@ -1,10 +1,12 @@
-
+.about-me {
+  padding-bottom: 10px;
+  background-color: #efeee9;
+}
 .about-me__title {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85px;
-  background-color: #efeee9;
+  min-height: 85px;
   background-image: url(../img/about_header.svg);
   background-size: 80%;
   background-repeat: no-repeat;
@@ -14,6 +16,12 @@
   font-size: rem(35px);
   line-height: rem(42px);
   color: $fontdark;
+  @include tablet {
+    min-height: 134px;
+    background-size: 55%;
+    font-size: rem(49px);
+    line-height: rem(52px);
+  }
 }
 .about-me__img {
   width: 100%;
@@ -22,20 +30,31 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 bottom;
+  @include tablet {
+    height: 415px;
+    margin-bottom: 10px;
+  }
 }
 
 .subtitle {
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-transform: uppercase;
   font-family: $fontsecond;
   font-size: rem(21px);
   line-height: rem(28px);
+  @include tablet {
+    font-size: rem(30px);
+    line-height: rem(36px);
+  }
+}
+.about-me__subtitle {
 }
 .about-me__text {
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
   font-family: $font;
   font-size: rem(14px);
   line-height: rem(24px);

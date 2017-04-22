@@ -5,17 +5,33 @@
     left: 0;
     right: 0;
     width: 100%;
-    min-height: 270px;
     background-color: rgba(66, 62, 66, 0.85);
   }
 }
+.footer-menu__wrap {
+  padding-top: rem(20px);
+  padding-bottom: rem(20px);
+}
+.footer-menu {
+  margin-bottom: rem(10px);
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
 .footer-menu__items {
-  padding: 20px;
   display: flex;
   justify-content: space-between;
+  @include tablet {
+    justify-content: space-around;
+  }
 }
 .footer-menu__link {
   font-family: $fontmedium;
   font-size: rem(13px);
   color: $white;
+  @include tablet {
+    font-size: rem(16px);
+    line-height: rem(24px);
+  }
 }

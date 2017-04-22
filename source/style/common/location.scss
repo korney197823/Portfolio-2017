@@ -1,0 +1,6 @@
+.location {
+  position: relative;
+  @include tablet {
+    min-height: 860px;
+  }
+}

@@ -40,6 +40,9 @@ $graph__p : 2 * 3.14 * $graph__r;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    @include tablet {
+      justify-content: center;
+    }
   }
   &__item {
     position: relative;
@@ -47,6 +50,11 @@ $graph__p : 2 * 3.14 * $graph__r;
     padding: 0;
     width: #{$graph__d}px;
     height: #{$graph__d}px;
+    @include tablet {
+      &:not(:last-of-type) {
+        margin-right: 36px;
+      }
+    }
 
   }
   &__title {
