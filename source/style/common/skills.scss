@@ -6,6 +6,9 @@
   line-height: 28px;
   font-weight: 300;
   color: #373e42;
+  @include laptop {
+    text-align: left;
+  }
 }
 
 .feateres__item-item {
@@ -43,6 +46,9 @@ $graph__p : 2 * 3.14 * $graph__r;
     @include tablet {
       justify-content: center;
     }
+    @include laptop {
+      justify-content: flex-start;
+    }
   }
   &__item {
     position: relative;
@@ -52,7 +58,12 @@ $graph__p : 2 * 3.14 * $graph__r;
     height: #{$graph__d}px;
     @include tablet {
       &:not(:last-of-type) {
-        margin-right: 36px;
+        margin-right: rem(36px);
+      }
+    }
+    @include laptop {
+      &:not(:last-of-type) {
+        margin-right: rem(20px);
       }
     }
 

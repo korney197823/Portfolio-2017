@@ -18,6 +18,12 @@
   padding-bottom: rem(10px);
   padding-left: rem(20px);
   padding-right: rem(20px);
+  @include laptop {
+    width: 34.5%;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .footer-menu__items {
   display: flex;

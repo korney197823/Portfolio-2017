@@ -11,6 +11,9 @@
   }
   &--about {
     color: rgba(255, 255, 255, 0.5);
+    @include laptop {
+      align-self: center;
+    }
   }
 }
 .copyright__name,
@@ -19,5 +22,5 @@
   padding: 0 7px;
 }
 .copyright__name {
-  border-right: 2px solid #f4f3f4;
+  border-right: 2px solid rgba(255, 255, 255, 0.4);
 }

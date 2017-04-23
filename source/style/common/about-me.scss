@@ -1,6 +1,14 @@
 .about-me {
   padding-bottom: 10px;
   background-color: #efeee9;
+  @include laptop {
+    width: 50%;
+  }
+}
+.about-me__wrap {
+  @include laptop {
+    display: flex;
+  }
 }
 .about-me__title {
   display: flex;
@@ -17,10 +25,13 @@
   line-height: rem(42px);
   color: $fontdark;
   @include tablet {
-    min-height: 134px;
+    min-height: rem(134px);
     background-size: 55%;
     font-size: rem(49px);
     line-height: rem(52px);
+  }
+  @include laptop {
+    min-height: rem(125px);
   }
 }
 .about-me__img {
@@ -38,8 +49,8 @@
 
 .subtitle {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
   text-transform: uppercase;
   font-family: $fontsecond;
   font-size: rem(21px);
@@ -52,10 +63,14 @@
 .about-me__subtitle {
 }
 .about-me__text {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: rem(10px);
+  padding-right: rem(10px);
   padding-bottom: 10px;
   font-family: $font;
   font-size: rem(14px);
   line-height: rem(24px);
+  @include tablet {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

@@ -48,9 +48,47 @@ button {
   @include desktop {
     width: 1200px;
   }
+  &--header {
+    @include desktop {
+      width: 96.66%;
+    }
+  }
   &--about-me {
     @include tablet {
       width: 472px;
+    }
+    @include laptop {
+      width: 74.5%;
+    }
+    @include desktop {
+      width: 54.44%;
+      margin: 0 0 0 auto;
+      padding-left: rem(20px);
+      padding-right: rem(20px);
+    }
+  }
+  &--features {
+    @include laptop {
+      width: 91.7%;
+      margin-left: 6.6%;
+    }
+  }
+  &--footer {
+    @include laptop {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include desktop {
+      width: 96.66%;
+    }
+  }
+  &--info {
+    @include laptop {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include desktop {
+      width: 96.66%;
     }
   }
 }

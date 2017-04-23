@@ -5,12 +5,16 @@
   @include tablet {
     position: absolute;
     width: 348px;
-    left: calc(50% - 174px);
-    top: calc(50% - 270px);
+    left: calc(50%);
+    top: calc(50% - 135px);
     background-color: rgba(255, 255, 255, 0.85);
     border-radius: 5px;
     z-index: 100;
-    transform: translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  @include laptop {
+    width: rem(380px);
+    padding: rem(35px) rem(40px);
   }
 }
 .contacts__title {
@@ -20,11 +24,14 @@
   font-family: $fontsecond;
   font-size: rem(35px);
   line-height: rem(42px);
+  @include laptop {
+    margin-bottom: rem(20px);
+  }
 }
 
 .contacts__icon {
-  width: 22px;
-  height: 22px;
+  width: rem(22px);
+  height: rem(22px);
   use {
     fill: $bgbasic
   }
@@ -33,7 +40,10 @@
 .contacts__item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+  @include laptop {
+    margin-bottom: rem(25px);
+  }
 }
 
 .contacts__link {

@@ -1,5 +1,8 @@
 .features {
   background-color: #eeebdf;
+  @include laptop {
+    width: 50%;
+  }
 }
 
 .features__subtitle {
@@ -9,6 +12,19 @@
   @include tablet {
     width: 472px;
     margin: 0 auto;
+  }
+  @include laptop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: rem(125px);
+    padding: 0;
+  }
+  @include desktop {
+    width: 34.44%;
+    padding-left: rem(40px);
+    padding-right: rem(40px);
   }
 }
 
@@ -22,5 +38,10 @@
   @include tablet {
     width: 472px;
     margin: 0 auto;
+  }
+  @include laptop {
+    width: 100%;
+    margin-bottom: rem(35px);
+    padding: 0;
   }
 }
