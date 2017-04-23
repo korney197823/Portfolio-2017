@@ -16,6 +16,9 @@
     width: rem(380px);
     padding: rem(35px) rem(40px);
   }
+  @include desktop {
+    top: calc(50% - 87px);
+  }
 }
 .contacts__title {
   padding-top: 20px;

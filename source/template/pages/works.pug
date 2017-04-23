@@ -1,0 +1,98 @@
+extends ../_template
+
+block variables
+  - var title = 'Мои работы'
+
+block content
+  include ../common/_svgsprite
+  header.header-about
+    .container.container--header
+      .header-about__top
+
+        .social
+          ul.social__items
+            li.social__item
+              a.social__link.social__link--header.social__link--vk(href="https://vk.com/id29755814") В контакте
+                svg.social__icon.social__icon--light
+                  use(xlink:href='#vk')
+            li.social__item
+              a.social__link.social__link--header.social__link--github(href="https://github.com/korney197823") Github
+                svg.social__icon.social__icon--light
+                  use(xlink:href='#github')
+            li.social__item
+              a.social__link.social__link--header.social__link--linkedin(href="#") LinkedIn
+                svg.social__icon.social__icon--light
+                  use(xlink:href='#in')
+
+        nav.main-menu
+          button.btn.btn--toggle(type="button")
+          ul.main-menu__items
+            li.main-menu__item
+              a.main-menu__link(href="works.html") Мои работы
+            li.main-menu__item
+              a.main-menu__link(href="works.html") Блог
+            li.main-menu__item
+              a.main-menu__link(href="works.html") Обо мне
+            li.main-menu__item
+              a.main-menu__link(href="works.html") Авторизация
+
+
+    .card-about
+      .card__img-wrap
+        img.card__img(src="/assets/img/avatar_3.jpg")
+      h2.card-about__title Денис Корниенко
+      p.card-about__text Личный сайт веб разработчика
+
+    a.btn--arrow(href="#about-me")
+      svg
+        use(xlink:href='#arrow_down')
+
+
+
+  main
+    h2.works-title Мои работы
+    include ../common/_slider
+
+
+  .footer.footer--about
+    .footer-menu__wrap
+      .container.container--footer
+        nav.footer-menu
+          ul.footer-menu__items
+            li.footer-menu__item
+              a.footer-menu__link Мои работы
+            li.footer-menu__item
+              a.footer-menu__link(href="about.html") Обо мне
+            li.footer-menu__item
+              a.footer-menu__link(href="blog.html") Блог
+            li.footer-menu__item
+              a.footer-menu__link(href="index.html") Авторизация
+
+        .social
+          ul.social__items
+            li.social__item.social__item--round
+              a.social__link.social__link--round.social__link--vk(href="https://vk.com/id29755814") В контакте
+                svg.social__icon.social__icon--footer
+                  use(xlink:href='#vk')
+            li.social__item.social__item--round
+              a.social__link.social__link--round.social__link--github(href="https://github.com/korney197823") Github
+                svg.social__icon.social__icon--footer
+                  use(xlink:href='#github')
+            li.social__item.social__item--round
+              a.social__link.social__link--round.social__link--linkedin(href="#") LinkedIn
+                svg.social__icon.social__icon--footer
+                  use(xlink:href='#in')
+
+    .info__wrap
+      .container.container--info
+        .info
+          p.info__text.
+            Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+
+        .copyright.copyright--about
+          p.copyright__name &#169; Денис Корниенко
+          p.copyright__text создано с любовью в LoftSchool 2017
+
+
+
+

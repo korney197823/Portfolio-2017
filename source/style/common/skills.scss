@@ -2,13 +2,15 @@
   margin-top: 20px;
   text-align: center;
   font-family: "Roboto Medium", sans-serif;
-  font-size: 21px;
-  line-height: 28px;
+  font-size: rem(21px);
+  line-height: rem(28px);
   font-weight: 300;
   color: #373e42;
   @include laptop {
     text-align: left;
   }
+
+
 }
 
 .feateres__item-item {
@@ -27,6 +29,9 @@
 // Исходные значения
 $graph__d : 110;
 $graph__sw : 20;
+@include desktop {
+  $graph__d : 120;
+}
 // Вычисленные значения
 $graph__r : ($graph__d / 2) - ($graph__sw / 2);
 $graph__x : $graph__d / 2;
@@ -104,5 +109,9 @@ $graph__p : 2 * 3.14 * $graph__r;
     font-weight: 500;
     color: #474b57;
     margin: 0 0 15px 0;
+    @include desktop {
+      font-size: rem(28px);
+      line-height: rem(32px);
+    }
   }
 }
