@@ -5,8 +5,8 @@
   let cardWraper = document.querySelector('.card__wrap');
   let btnMain = document.querySelector('.btn--main');
   
-  // btnAuth.addEventListener('click', cardFlipped);
-  // btnMain.addEventListener('click', cardReturnFlipped);
+  // btnAuth.on('click', cardFlipped);
+  // btnMain.on('click', cardReturnFlipped);
 
   function cardFlipped() {
     cardWraper.style.transform='rotateY(180deg)';

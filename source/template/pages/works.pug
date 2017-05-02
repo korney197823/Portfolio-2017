@@ -50,8 +50,31 @@ block content
 
 
   main
-    h2.works-title Мои работы
-    include ../common/_slider
+    section.works
+      h2.works__title Мои работы
+      include ../common/_slider
+
+    section.review
+      h2.review__title Что обо мне говорят
+      ul.review__list
+        li.review__item
+          i.review__icon.icon-quote-left
+          p.review__text.
+            Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+          .review__author-wrap
+            img.review__img(src='assets/img/author_1.jpg')
+            cite.review__author
+              span.review__author-name Ковальчук Дмитрий
+              span.review__author-post основатель Loftschool
+        li.review__item
+          i.review__icon.icon-quote-left
+          p.review__text.
+            Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+          .review__author-wrap
+            img.review__img(src='assets/img/author_2.jpg')
+            cite.review__author
+              span.review__author-name Зар Захаров
+              span.review__author-post преподаватель
 
 
   //.footer.footer--about
